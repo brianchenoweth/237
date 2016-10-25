@@ -59,7 +59,7 @@ start:  initIO                  * Initialize (required for I/O
 	move.b		#' ',(A1)+
 	move.b		#'*',(A1)+
 	clr.b		(A1)		
-	lea		stars+35,A2		*loads amount of stars needed into A2
+	lea		stars+35,A2	*loads amount of stars needed into A2
 	adda.l		D0,A2		*adds length of users age to A2
 	clr.b		(A2)
 	lineout		stars		*prints stars above answer1
